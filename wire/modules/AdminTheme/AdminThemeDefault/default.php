@@ -16,7 +16,7 @@ if(!isset($content)) $content = '';
 	
 $searchForm = $user->hasPermission('page-edit') ? $modules->get('ProcessPageSearch')->renderSearchForm() : '';
 
-$config->styles->prepend($config->urls->adminTemplates . "styles/" . ($adminTheme->colors ? "main-$adminTheme->colors" : "main") . ".css?v=7"); 
+$config->styles->prepend($config->urls->adminTemplates . "styles/" . (false ? "main-$adminTheme->colors" : "main-metric") . ".css?v=7"); 
 $config->styles->append($config->urls->root . "wire/templates-admin/styles/font-awesome/css/font-awesome.min.css"); 
 $config->scripts->append($config->urls->root . "wire/templates-admin/scripts/inputfields.js?v=5"); 
 $config->scripts->append($config->urls->adminTemplates . "scripts/main.js?v=5");
@@ -49,7 +49,7 @@ $helpers = new AdminThemeDefaultHelpers();
 	<div id="masthead" class="masthead ui-helper-clearfix">
 		<div class="container">
 
-			<a id='logo' href='<?php echo $config->urls->admin?>'><img width='130' src="<?php echo $config->urls->adminTemplates?>styles/images/logo.png" alt="ProcessWire" /></a>
+			<a id='logo' href='<?php echo $config->urls->admin?>'><img width='130' src="<?php echo $config->urls->adminTemplates?>styles/images/metric.png" alt="ProcessWire" /></a>
 
 			<?php 
 			if($user->isLoggedin()) {
