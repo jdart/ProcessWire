@@ -12,6 +12,7 @@ $dark-blue: #2F3638;
 $light-green: #93BF0D;
 $green: #93BF0D;
 $brown: #821038;
+$light-black: lighten(#000000, 10%);
 
 $subtle-bg: #f8f8f8; //jn
 $subtle-border: darken($subtle-bg, 7%);
@@ -19,7 +20,7 @@ $subtle-border: darken($subtle-bg, 7%);
 $text-bg: $white;  
 $text-color: $black;
 
-$masthead-bg: #000; 
+$masthead-bg: $light-black; 
 
 $breadcrumbs-bg: $subtle-bg; 
 $breadcrumbs-color: transparentize($text-color, .8); //jn
@@ -32,8 +33,8 @@ $topnav-link-color: $reverse-text-color;
 $topnav-link-bg: none; 
 $topnav-link-current-color: $pink;
 $topnav-link-current-bg: $breadcrumbs-bg; 
-$topnav-link-hover-color: $white; 
-$topnav-link-hover-bg: darken($masthead-bg, 5%); 
+$topnav-link-hover-color: darken($white, 20%); 
+$topnav-link-hover-bg: $light-black; 
 
 $item-header-hover-color: $white;
 $item-header-hover-bg: $pink; 
